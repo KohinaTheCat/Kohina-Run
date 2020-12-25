@@ -1,5 +1,3 @@
-<div align
-
 <h1 align="center"> Kohina!Run</h1>
 
 <p align="center">
