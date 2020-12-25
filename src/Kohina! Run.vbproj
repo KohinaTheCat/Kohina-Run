@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7635920-63DE-498E-998A-4778624A7419}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Kohina__Run.My.MyApplication</StartupObject>
+    <RootNamespace>Kohina__Run</RootNamespace>
+    <AssemblyName>Kohina! Run</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Kohina! Run.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Kohina! Run.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBedroom.Designer.vb">
+      <DependentUpon>frmBedroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBedroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCookingR1.Designer.vb">
+      <DependentUpon>frmCookingR1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCookingR1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCookingR2.Designer.vb">
+      <DependentUpon>frmCookingR2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCookingR2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCookingR3.Designer.vb">
+      <DependentUpon>frmCookingR3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCookingR3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrypt.Designer.vb">
+      <DependentUpon>frmCrypt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrypt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnding.Designer.vb">
+      <DependentUpon>frmEnding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameOption.Designer.vb">
+      <DependentUpon>frmGameOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGarden.Designer.vb">
+      <DependentUpon>frmGarden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGarden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHangman.Designer.vb">
+      <DependentUpon>frmHangman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHangman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntro.Designer.vb">
+      <DependentUpon>frmIntro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventory.Designer.vb">
+      <DependentUpon>frmInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemsObtained.Designer.vb">
+      <DependentUpon>frmItemsObtained.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemsObtained.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitchen.Designer.vb">
+      <DependentUpon>frmKitchen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitchen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeftTown.Designer.vb">
+      <DependentUpon>frmLeftTown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeftTown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMinigames.Designer.vb">
+      <DependentUpon>frmMinigames.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMinigames.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMinigameTicTacToe.Designer.vb">
+      <DependentUpon>frmMinigameTicTacToe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMinigameTicTacToe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoodleSortR1.Designer.vb">
+      <DependentUpon>frmNoodleSortR1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoodleSortR1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoodleSortR2.Designer.vb">
+      <DependentUpon>frmNoodleSortR2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoodleSortR2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoodleSortR3.Designer.vb">
+      <DependentUpon>frmNoodleSortR3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoodleSortR3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutsideHouse.Designer.vb">
+      <DependentUpon>frmOutsideHouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutsideHouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPauseMenu.Designer.vb">
+      <DependentUpon>frmPauseMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPauseMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRhythm.Designer.vb">
+      <DependentUpon>frmRhythm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRhythm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRightTown.Designer.vb">
+      <DependentUpon>frmRightTown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRightTown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashArt.Designer.vb">
+      <DependentUpon>frmSplashArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStore.Designer.vb">
+      <DependentUpon>frmStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTent.Designer.vb">
+      <DependentUpon>frmTent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTreeHouse.Designer.vb">
+      <DependentUpon>frmTreeHouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTreeHouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmMatching.Designer.vb">
+      <DependentUpon>frmMatching.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatching.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBedroom.resx">
+      <DependentUpon>frmBedroom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCookingR1.resx">
+      <DependentUpon>frmCookingR1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCookingR2.resx">
+      <DependentUpon>frmCookingR2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCookingR3.resx">
+      <DependentUpon>frmCookingR3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrypt.resx">
+      <DependentUpon>frmCrypt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnding.resx">
+      <DependentUpon>frmEnding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameOption.resx">
+      <DependentUpon>frmGameOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGarden.resx">
+      <DependentUpon>frmGarden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHangman.resx">
+      <DependentUpon>frmHangman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntro.resx">
+      <DependentUpon>frmIntro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventory.resx">
+      <DependentUpon>frmInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemsObtained.resx">
+      <DependentUpon>frmItemsObtained.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitchen.resx">
+      <DependentUpon>frmKitchen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeftTown.resx">
+      <DependentUpon>frmLeftTown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMinigames.resx">
+      <DependentUpon>frmMinigames.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMinigameTicTacToe.resx">
+      <DependentUpon>frmMinigameTicTacToe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoodleSortR1.resx">
+      <DependentUpon>frmNoodleSortR1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoodleSortR2.resx">
+      <DependentUpon>frmNoodleSortR2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoodleSortR3.resx">
+      <DependentUpon>frmNoodleSortR3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutsideHouse.resx">
+      <DependentUpon>frmOutsideHouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPauseMenu.resx">
+      <DependentUpon>frmPauseMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRhythm.resx">
+      <DependentUpon>frmRhythm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRightTown.resx">
+      <DependentUpon>frmRightTown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashArt.resx">
+      <DependentUpon>frmSplashArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStore.resx">
+      <DependentUpon>frmStore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTent.resx">
+      <DependentUpon>frmTent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTreeHouse.resx">
+      <DependentUpon>frmTreeHouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatching.resx">
+      <DependentUpon>frmMatching.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guugle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirm.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_cutted.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohinaIdea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kokkuriTake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loveNoodles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon - kohina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chopsticks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outsideHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushrooms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentPapers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentNoPapers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\townLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\townRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange carrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple carrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jarrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\howtoplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ckara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokeball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokemon-logo-497D61B223-seeklogo.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tofu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angelina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seaweed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bowtie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macaroni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ravioli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kallawen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohinahold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stoveLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stoveRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrotCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leekCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroomsCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seaweedCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tofuCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireHot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodlesCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohinaSmile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohinaSmile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladleempty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladlefull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potemptybowlfull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potfullbowlfull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potfulllbowlempty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\typingSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INEEDU8bit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOPE8bit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BST8bit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIRE8bit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina detective.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_falling 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_falling 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_falling 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_falling 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_downward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_falling 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_front _left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_front _right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_back_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_back_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_back__right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_back__left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endingPat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endingSick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endingAmbulence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endingEatingNoodles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chefICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hangmanICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifyICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicnoteICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodlesICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzleICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tictactoeICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_right_walk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_left_walk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_right_walking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_right_walking2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_left_walking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kohina_left_walking2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inuSteal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inugamiSteal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inuStealing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepyInu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepyInuMeme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ingredients.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
