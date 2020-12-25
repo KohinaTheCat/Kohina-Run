@@ -7,7 +7,7 @@
     Kohina!Run is a relaxing RPG where your ultimate goal is to make a bowl of noodles. You play as Kohina to solve puzzling challenges, fight off thieves, and interact with NPCs to find and cook ingredients.
 	<br/>
     <br/>
-    <a href="https://github.com/KohinaTheCat/Kohina-Run/releases/tag/1.0.0">View Demo</a>
+    <a href="https://github.com/KohinaTheCat/Kohina-Run/releases/tag/1.0.1">View Demo</a>
   </p>
 
 ### Built With
@@ -25,7 +25,7 @@
 
 > **note**: you can play the mini-games by themselves if you go to the mini-game tab from the main menu
 
-### **Download the Game [here](https://github.com/KohinaTheCat/Kohina-Run/releases/tag/1.0.0)**
+### **Download the Game [here](https://github.com/KohinaTheCat/Kohina-Run/releases/tag/1.0.1)**
 
 
 
